@@ -115,7 +115,7 @@ for tr in traces:
         Q.insert (i,FindQ(ecg,R[i])+1)
         S.insert(i, FindMin(ecg,R[i],45))
         
-    new_ann = wfdb.rdann('PQ-Ann/'+ tr,'atr');
+    new_ann = wfdb.rdann('PT-Ann/'+ tr,'atr');
     
     new_symbols =  new_ann.symbol
 
